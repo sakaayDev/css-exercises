@@ -18,8 +18,12 @@ body {
 .modal {
   background: white;
   width: 480px;
+  /* height: 175px;         i added this */
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .icon {
@@ -48,6 +52,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin-left: auto;   /* i added this */
 }
 
 button {
@@ -66,4 +71,22 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+
+.top {
+  display: flex;    /* i added this */
+  gap: 8px;     /* i added this */
+  flex:1;       /* i added this */
+}
+.header {
+  font-weight: bold;                /* i added this */
+  font-size: larger;               /* i added this */
+}
+.text {                     /* i added this */
+  padding-left: 50px;
+  margin-bottom: 16px;
+}
+.bot {                         /* i added this */
+  padding-left: 50px;
 }

@@ -4,7 +4,11 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif; 
+  /* also the 3 line below */
+  display: flex;                                   
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -24,4 +28,43 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+/* i did all this blow */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 0.555);
+}
+
+.header,                                
+.footer {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links,        /* just noticed that these are just UL,could have written it there */
+.right-links {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons > * {        /* i could have just done button,i'm slow XD didn't even notice */
+  padding: 8px;
+}
+
+.footer {
+  border:  2px;
+  background: rgba(128, 128, 128, 0.171);
 }
